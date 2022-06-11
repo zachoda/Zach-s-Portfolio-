@@ -1,0 +1,110 @@
+:root {
+    --primary-color: navy;
+    --secondary-color: teal; 
+    --tertiary-color: rgb(31, 29, 29); 
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: gray;
+  color: var(--primary-color)
+}
+header {
+  background-color: var(--tertiary-color);
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  width: 18%;
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+header a {
+  color: var(--secondary-color);
+}
+header nav {
+  margin: 7px 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+ list-style: none;
+}
+header nav ul a{
+  padding: 10px 15px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+}
+
+.hero {
+  background-image: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80)
+  
+}
+.hero .hero-subtitle {
+  color: var(--tertiary-color);
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: flex-end;
+  align-items:flex-end;
+}
+.Main-Body .About-Me h3{
+  border-right: 3px solid var(--primary-color);
+}
+.Main-Body .About-Me p{
+  display: flex;
+  justify-content: center;
+}
+.Main-Body {
+  margin: 2;
+}
+
+
+
+
+
+.Main-Body .Contact-Me h3 {
+
+}
+.Main-Body .Contact-Me div {
+
+}
+
+@media screen and (max-width: 575px) {
+  .header {
+    width: 100%;
+  } 
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .hero-subtitle {
+    justify-content: baseline;
+    align-items: center;
+  }
+  .Main-Body .About-Me h3{
+justify-content: left;
+  }
+  .Main-Body .About-Me p{
+    align-items: center;
+  }
+  .Main-Body .Work h3 {
+    justify-content: left;
+  }
+  .Main-Body .Work .Surf-Report, .Other-Projects {
+    align-items: center;
+  }
+  .Main-Body .Contact-Me h3 {
+    justify-content: left;
+  }
+  .Main-Body .Contact-Me p {
+    flex-direction: column;
+  }
+}
