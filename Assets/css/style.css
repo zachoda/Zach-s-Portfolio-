@@ -3,7 +3,7 @@
 }
 :root {
     --primary-color: rgb(64, 0, 128);
-    --secondary-color: rgb(61, 58, 99); 
+    --secondary-color: rgb(110, 105, 180); 
     --tertiary-color: rgb(49, 47, 47); 
 }
 body{
@@ -108,11 +108,34 @@ flex: 0 0 77%;
 font-size: larger;
 font-weight: bolder;
 }
+.Work img {
+  border: 14px solid var(--secondary-color);
+  flex-wrap: wrap;
+  flex-direction: column!important;
+  align-items: center!important;
+}
+.Work .Other-Projects img{
+  height: 150px;
+  width: 300px;
+}
+.Work .Surf-Report img{
+  height:700px;
+  width: 650px;
+}
+.Work img:hover {
+  opacity: 65%;
+}
 .Work .Surf-Report {
 line-height:0;
+background-color: var(--secondary-color);
+align-items: center;
+width: auto;
 }
 .Work .Other-Projects {
   line-height:0;
+  background-color: var(--secondary-color);
+  align-items: center;
+  padding-bottom: 10px;
 }
 .Contact .info{
   display: flex;
@@ -123,6 +146,8 @@ line-height:0;
 }
 .Contact .info nav a, a:link, a:visited{
   color:black;
+  font-size: larger;
+  font-weight: bolder;
   text-decoration: underline;
   text-decoration-color: var(--primary-color);
   text-decoration-thickness: 3px;
